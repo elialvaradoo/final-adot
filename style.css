@@ -1,0 +1,84 @@
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	background: black
+}
+
+#canvas {
+	z-index: 9;
+}
+
+#canvas, #wrapper {
+	position: relative;
+}
+
+
+#wrapper {
+    width: 100%;
+    height: 100vh;
+    /*background: rgba(0,0,0, .7);*/
+    z-index: 999;
+    margin-top: -48%;
+}
+
+header {
+	height: 13vh;
+	width: 100%;
+  	position: fixed;
+  	overflow: hidden;
+  	top: 0;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    background: rgba(0,0,0, .6);
+    z-index: 999;
+}
+
+nav ul {
+	float: right;
+	width: 50%;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 3% 5%;
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1em;
+	font-weight: 700;
+}
+
+nav ul a li  {
+    position: relative;
+    z-index: 1;
+}
+
+/*nav ul a li:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom center;
+    background: #BF0A30;
+    z-index: -1;
+    transition: transform 0.3s;
+}*/
+
+nav ul li:hover {
+	color: red;
+	transition: .4s ease;
+}
+
+nav ul a li:hover::after {
+    transform: scaleY(2);
+}
+
+#myVideo {
+	width: 100%;
+}

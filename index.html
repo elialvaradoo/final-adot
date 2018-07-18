@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adot</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style01.css">
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="navigation.css">
+  <link href="https://fonts.googleapis.com/css?family=Knewave" rel="stylesheet">  
+</head>
+<body>
+
+
+
+  <!--    <ul class="navigation">
+      <li><a href="">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Portfolio</a></li>
+      <li><a href="">Contact us</a></li>
+    </ul> -->
+
+
+    <nav id="nav-main">
+<ul>
+<!-- <li class="page-head__list-item">
+<a class="page-head__link page-head__link--glitch" data-glitch-text="Home" title="Home" href="#">Home</a>
+</li> -->
+<li>
+<a class="page-head__link page-head__link--glitch" href="#" data-glitch-text="Music" title="Music">Music</a>
+</li>
+<li>
+<a class="page-head__link page-head__link--glitch" data-glitch-text="Videos" title="Videos" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"> Videos</a>
+</li>
+<li>
+<a class="page-head__link page-head__link--glitch" data-glitch-text="Store" title="Store" href="#">Store</a>
+</li>
+<li>
+<a class="page-head__link page-head__link--glitch" data-glitch-text="Contact" title="Contact" href="#">Contact</a>
+</li>
+</ul>
+</nav>
+
+
+<header class="global-nav">
+  <nav role="navigation" class="container">
+    <ul class="nav-wrapper">
+      <!-- Start Logo Section -->
+      <li class="navsection-logo">
+        <a href="/">
+        </a>
+      </li>
+      <!-- End Logo Section -->
+      <!-- Start Mobile Section -->
+      <li class="navsection-mobile">
+        <!-- Mobile Menu Button -->
+                 <h2>Menu</h2>
+        <a class="mobilemenu-wrapper" id="toggle">
+            <span class="bars"></span>
+            <span class="bars"></span>
+            <span class="bars"></span>
+          </a>
+        <!-- Overlay -->
+        <div class="overlay" id="overlay">
+          <div>
+            <ul>
+              <!-- <li><a href="/">Home</a></li> -->
+              <li><a href="/">MUSIC</a></li>
+              <li><a href="/">VIDEOS</a></li>
+              <li><a href="/">STORE</a></li>
+              <li><a href="/">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <!-- End Mobile Section -->
+      <!-- Start Search Section -->
+      <li class="navsection-search">
+        <div>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+
+
+<div class="homepage-video desktop">
+<video autoplay muted loop id="bgVid">
+  <source src="videos/min-clip.mov" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+</div>
+
+
+<div class="homepage-video mobile">
+<video autoplay muted loop id="bgVid">
+  <source src="videos/min-clip.mov" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+</div>
+
+<script type="text/javascript">
+  $('#toggle').click(function() {
+   $(this).toggleClass('active');
+   $('#overlay').toggleClass('open');
+  }); 
+</script>
+
+</body>
+</html>
